@@ -3,16 +3,32 @@ package _01_Simple_Array_Algorithms;
 public class _00_1D_Array_Methods {
 	//1. Complete the method so that it returns the sum of all
 	//   of the integers in the array being passed in
+	public static void main(String[] args) {
+		int[] integer=  {1,2,3,4,5,6,7,8};
+		sumIntArray(integer);
+		averageIntArray(integer);
+	}
 	public static int sumIntArray(int[] values) {
-
-		return 0;
+	int sum = 0;
+	for (int i = 0; i < values.length; i++) {
+		sum += values[i];
+		
+	}
+		return sum;
 	}
 	
 	//2. Complete the method so that it returns the average of all
 	//   of the integers in the array being passed in
 	public static double averageIntArray(int[] values) {
-				
-		return 0;
+	int sum = 0;
+	int average = sum /=2;
+	for (int i = 0; i < values.length; i++) {
+		sum += values[i];
+		
+		System.out.println(average);
+		
+	}
+		return average;
 	}
 	
 	
@@ -31,4 +47,5 @@ public class _00_1D_Array_Methods {
 		
 		return 0;
 	}
+	
 }
